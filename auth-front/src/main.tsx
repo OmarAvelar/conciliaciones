@@ -37,6 +37,10 @@ const router = createBrowserRouter([
         path: "/processing",
         element: <Processing />,
       },
+      {
+        path: "/api/upload/arg",
+        element: <Processing />,
+      },
     ],
   },
 ]);
