@@ -9,7 +9,15 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
+app.set("json spaces", 5); // to pretify json response
+
+const PORT = process.env.PORT;
+const fileParser = require("./file_parser");
+const fileParserArg = require("./file_parser_arg");
+const generateConciliation = require("./generate_conciliation");
+
 const port = process.env.PORT || 3000;
+
 
 main().catch((err) => console.log(err));
 
@@ -48,6 +56,54 @@ app.use("/api/posts", authenticateToken, require("./routes/posts"));
 }); */
 
 app.use("/api/user", authenticateToken, require("./routes/user"));
+
+app.post("/api/upload", async (req, res) => {
+  await fileParser(req)
+    .then((data) => {
+      //res.status(200).json({
+      //message: "Success",
+      //data
+      //})
+    })
+    .catch((error) => {
+      res.status(400).json({
+        message: "An error occurred." + error,
+        error,
+      });
+    });
+});
+
+app.post("/api/upload/arg", async (req, res) => {
+  await fileParserArg(req)
+    .then((data) => {
+      //res.status(200).json({
+      //message: "Success",
+      //data
+      //})
+    })
+    .catch((error) => {
+      res.status(400).json({
+        message: "An error occurred." + error,
+        error,
+      });
+    });
+});
+
+app.post("/api/generate/conciliation", async (req, res) => {
+  await generateConciliation(req)
+    .then((data) => {
+      res.status(200).json({
+        message: "Success",
+        data,
+      });
+    })
+    .catch((error) => {
+      res.status(400).json({
+        message: "An error occurred." + error,
+        error,
+      });
+    });
+});
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
