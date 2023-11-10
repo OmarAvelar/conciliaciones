@@ -1,35 +1,42 @@
 import { useState } from "react";
 import DefaultLayout from "../layout/DefaultLayout";
 import { useAuth } from "../auth/AuthProvider";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { AuthResponse, AuthResponseError } from "../types/types";
 
-export default function Signup() {
+export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
   const [errorResponse, setErrorResponse] = useState("");
 
   const auth = useAuth();
-  const goTo = useNavigate();
 
-  async function handleSubmit(e: React.ChangeEvent<HTMLFormElement>) {
+  function handleChange(e: React.ChangeEvent) {
+    const { name, value } = e.target as HTMLInputElement;
+    if (name === "username") {
+      setUsername(value);
+    }
+    if (name === "password") {
+      setPassword(value);
+    }
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    console.log(username, password, name);
-
+    // auth.setIsAuthenticated(true);
     try {
-      const response = await fetch("http://localhost:3000/api/signup", {
+      const response = await fetch("http://localhost:3000/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password, name }),
+        body: JSON.stringify({ username, password }),
       });
       if (response.ok) {
         const json = (await response.json()) as AuthResponse;
         console.log(json);
-        setUsername("");
-        setPassword("");
-        setName("");
-        goTo("/");
+
+        if (json.body.accessToken && json.body.refreshToken) {
+          auth.saveUser(json);
+        }
       } else {
         const json = (await response.json()) as AuthResponseError;
 
@@ -39,39 +46,30 @@ export default function Signup() {
       console.log(error);
     }
   }
-
   if (auth.isAuthenticated) {
     return <Navigate to="/dashboard" />;
   }
-
   return (
     <DefaultLayout>
       <form onSubmit={handleSubmit} className="form">
-        <h1>Signup</h1>
+        <h1>Login</h1>
         {!!errorResponse && <div className="errorMessage">{errorResponse}</div>}
-        <label>Name</label>
-        <input
-          type="text"
-          name="name"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
         <label>Username</label>
         <input
-          type="text"
           name="username"
-          onChange={(e) => setUsername(e.target.value)}
+          type="text"
+          onChange={handleChange}
           value={username}
         />
         <label>Password</label>
         <input
           type="password"
           name="password"
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={handleChange}
           value={password}
         />
 
-        <button>Create account</button>
+        <button>Login</button>
       </form>
     </DefaultLayout>
   );

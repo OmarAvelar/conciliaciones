@@ -11,6 +11,7 @@ import Profile from "./routes/Profile.tsx";
 import Processing from "./routes/Processing.tsx";
 
 import "./index.css";
+import Analitycs from "./routes/Analitycs.tsx";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/api/upload/arg",
         element: <Processing />,
+      },
+      {
+        path: "/analitycs",
+        element: <Analitycs />,
       },
     ],
   },
