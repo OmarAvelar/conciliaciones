@@ -67,6 +67,7 @@ export default function Dashboard() {
   return (
     <PortalLayout>
       <div className="dashboard">
+      <section style={{ backgroundColor: '#eee' }}>
         <h1>Dashboard de {auth.getUser()?.name ?? ""}</h1>
         <form onSubmit={handleSubmit}>
           <input
@@ -82,6 +83,8 @@ export default function Dashboard() {
             <p>{post.completed}</p>
           </div>
         ))}
+        
+      </section>
       </div>
     </PortalLayout>
   );

@@ -1,0 +1,837 @@
+.seleccionar-archivos {
+  background-color: #f8fbff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.seleccionar-archivos .div {
+  background-color: #f8fbff;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.seleccionar-archivos .contenido {
+  position: absolute;
+  width: 1080px;
+  height: 646px;
+  top: 179px;
+  left: 316px;
+  background-color: #f9fcff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #0000001f;
+}
+
+.seleccionar-archivos .filial {
+  width: 480px;
+  left: 574px;
+  position: absolute;
+  height: 596px;
+  top: 25px;
+}
+
+.seleccionar-archivos .boton-cargar {
+  position: absolute;
+  width: 270px;
+  height: 60px;
+  top: 536px;
+  left: 104px;
+  background-color: #b3c0ce;
+  border-radius: 8px;
+}
+
+.seleccionar-archivos .submit-filial-2 {
+  position: absolute;
+  width: 270px;
+  height: 60px;
+  top: -20px;
+  left: -40px;
+}
+
+.seleccionar-archivos .submit-filial-1 {
+  position: absolute;
+  width: 270px;
+  height: 60px;
+  top: -20px;
+  left: -40px;
+}
+
+.seleccionar-archivos .contenido-2 {
+  position: relative;
+  width: 190px;
+  height: 23px;
+  top: 19px;
+  left: 41px;
+}
+
+.seleccionar-archivos .text-wrapper {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-inputs);
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .text-wrapper-submit {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-inputs);
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .vector {
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  top: -0px;
+  left: -15px;
+}
+
+.seleccionar-archivos .seleccionar-archivo {
+  position: absolute;
+  width: 484px;
+  height: 200px;
+  top: 113px;
+  left: 0;
+}
+
+.seleccionar-archivos .overlap-group {
+  position: relative;
+  width: 480px;
+  height: 200px;
+  border-radius: 12px;
+  border: 2px solid;
+  border-color: #e3e8ed;
+}
+
+.seleccionar-archivos .boton-seleccionar {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  position: absolute;
+  width: 270px;
+  height: 60px;
+  top: 68px;
+  left: 103px;
+  background-color: #b3c0ce;
+  border-radius: 8px;
+}
+
+.seleccionar-archivos .boton-seleccionar .seleccionar{
+  position: relative;
+  width: 270px;
+  height: 60px;
+  top: -30px;
+  left: -36px;
+}
+
+.seleccionar-archivos .div-2 {
+  position: relative;
+  width: 230px;
+  height: 23px;
+  top: 19px;
+  left: 21px;
+}
+
+.seleccionar-archivos .img {
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  top: -5px;
+  left: -15px;
+}
+
+.seleccionar-archivos .p {
+  position: absolute;
+  top: 28px;
+  left: 64px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #15171a;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .texto-formatos {
+  position: absolute;
+  top: 149px;
+  left: 78px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #666e77;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1.08px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .archivos-filial {
+  width: 480px;
+  height: 130px;
+  position: absolute;
+  top: 328px;
+  left: 0;
+}
+
+.seleccionar-archivos .doc-subido {
+  position: absolute;
+  width: 480px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  border: 2px solid;
+  border-color: #e3e8ed;
+}
+
+.seleccionar-archivos .vector-2 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 17px;
+  left: 437px;
+}
+
+.seleccionar-archivos .pdf-texto {
+  width: 94px;
+  position: absolute;
+  height: 41px;
+  top: 8px;
+  left: 54px;
+}
+
+.seleccionar-archivos .overlap-group-2 {
+  position: relative;
+  width: 90px;
+  height: 41px;
+}
+
+.seleccionar-archivos .text-wrapper-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #15171a;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .text-wrapper-3 {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #666e77;
+  font-size: 16px;
+  letter-spacing: 0.96px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .vector-3 {
+  position: absolute;
+  width: 21px;
+  height: 26px;
+  top: 16px;
+  left: 17px;
+}
+
+.seleccionar-archivos .doc-subido-2 {
+  top: 70px;
+  position: absolute;
+  width: 480px;
+  height: 60px;
+  left: 0;
+  border-radius: 12px;
+  border: 2px solid;
+  border-color: #e3e8ed;
+}
+
+.seleccionar-archivos .overlap-group-wrapper {
+  width: 101px;
+  position: absolute;
+  height: 41px;
+  top: 8px;
+  left: 54px;
+}
+
+.seleccionar-archivos .overlap-group-3 {
+  position: relative;
+  width: 97px;
+  height: 41px;
+}
+
+.seleccionar-archivos .filial-2 {
+  position: absolute;
+  width: 482px;
+  height: 96px;
+  top: 0;
+  left: 0;
+}
+
+.seleccionar-archivos .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #15171a;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .dropdown {
+  position: absolute;
+  width: 482px;
+  height: 60px;
+  top: 36px;
+  left: 0;
+}
+
+.seleccionar-archivos .overlap-group-4 {
+  position: relative;
+  width: 480px;
+  height: 60px;
+  background-color: #dfe6ec;
+  border-radius: 8px;
+}
+
+.seleccionar-archivos .flecha-abajo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  left: 425px;
+  background-color: var(--variable-collection-boton);
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px #00000033;
+}
+
+.seleccionar-archivos .vector-4 {
+  position: absolute;
+  width: 21px;
+  height: 12px;
+  top: 20px;
+  left: 15px;
+}
+
+.seleccionar-archivos .text-wrapper-4 {
+  position: absolute;
+  width: 262px;
+  top: 19px;
+  left: 20px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #666e77;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+
+.seleccionar-archivos .filial-3 {
+  width: 490px;
+  left: 24px;
+  position: absolute;
+  height: 596px;
+  top: 25px;
+}
+
+.seleccionar-archivos .contenido-wrapper {
+  position: absolute;
+  width: 270px;
+  height: 60px;
+  top: 536px;
+  left: 105px;
+  background-color: #b3c0ce;
+  border-radius: 8px;
+}
+
+.seleccionar-archivos .overlap-group-5 {
+  position: relative;
+  width: 480px;
+  height: 200px;
+  background-color: #f9fcff;
+  border-radius: 12px;
+  border: 2px solid;
+  border-color: #e3e8ed;
+}
+
+.seleccionar-archivos .seleccionar-filial-1 {
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+
+.seleccionar-archivos .seleccionar-filial-2 {
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  left: -35px;
+  top: -25px;
+}
+
+.seleccionar-archivos .div-wrapper {
+  position: absolute;
+  width: 270px;
+  height: 60px;
+  top: 75px;
+  left: 103px;
+  background-color: #b3c0ce;
+  border-radius: 8px;
+}
+
+.seleccionar-archivos .filial-4 {
+  width: 482px;
+  height: 93px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.seleccionar-archivos .text-wrapper-5 {
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-texto-1);
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.seleccionar-archivos .dropdown-2 {
+  position: absolute;
+  width: 482px;
+  height: 60px;
+  top: 33px;
+  left: 0;
+}
+
+.seleccionar-archivos .text-wrapper-6 {
+  position: absolute;
+  width: 262px;
+  top: 19px;
+  left: 20px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-texto-1);
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+
+.seleccionar-archivos .archivos-filial-2 {
+  width: 490px;
+  height: 173px;
+  position: absolute;
+  top: 328px;
+  left: 0;
+}
+
+.seleccionar-archivos .contenedor-archivos {
+  position: absolute;
+  width: 480px;
+  height: 173px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.seleccionar-archivos .overlap {
+  position: relative;
+  height: 200px;
+}
+
+.seleccionar-archivos .documentos {
+  position: absolute;
+  width: 480px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+
+.seleccionar-archivos .pdf-texto-2 {
+  position: relative;
+  width: 444px;
+  height: 41px;
+  top: 8px;
+  left: 18px;
+}
+
+.seleccionar-archivos .vector-5 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 9px;
+  left: 419px;
+}
+
+.seleccionar-archivos .overlap-group-6 {
+  position: absolute;
+  width: 90px;
+  height: 41px;
+  top: 0;
+  left: 36px;
+}
+
+.seleccionar-archivos .vector-6 {
+  position: absolute;
+  width: 21px;
+  height: 26px;
+  top: 8px;
+  left: -1px;
+}
+
+.seleccionar-archivos .pdf-texto-wrapper {
+  top: 140px;
+  position: absolute;
+  width: 480px;
+  height: 60px;
+  left: 0;
+  border-radius: 12px;
+  border: 2px solid;
+  border-color: #e3e8ed;
+}
+
+.seleccionar-archivos .vector-7 {
+  position: absolute;
+  width: 22px;
+  height: 14px;
+  top: 9px;
+  left: 419px;
+}
+
+.seleccionar-archivos .overlap-group-7 {
+  position: absolute;
+  width: 97px;
+  height: 41px;
+  top: 0;
+  left: 36px;
+}
+
+.seleccionar-archivos .vector-8 {
+  position: absolute;
+  width: 21px;
+  height: 15px;
+  top: 8px;
+  left: -1px;
+}
+
+.seleccionar-archivos .fondo-con {
+  position: absolute;
+  width: 480px;
+  height: 50px;
+  top: 130px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(249, 252, 255, 0) 0%, rgb(249, 252, 255) 100%);
+}
+
+.seleccionar-archivos .scroll {
+  position: absolute;
+  width: 5px;
+  height: 87px;
+  top: 1px;
+  left: 485px;
+  background-color: #b3c0ce;
+  border-radius: 10px;
+}
+
+.seleccionar-archivos .linea-divisoria {
+  width: 1px;
+  height: 596px;
+  top: 25px;
+  left: 538px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.seleccionar-archivos .titulo {
+  position: absolute;
+  top: 129px;
+  left: 316px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #15171a;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .boton-ejecutar {
+  position: absolute;
+  width: 382px;
+  height: 60px;
+  top: 855px;
+  left: 1016px;
+}
+
+.seleccionar-archivos .overlap-2 {
+  position: absolute;
+  width: 380px;
+  height: 60px;
+  background-color: var(--variable-collection-boton);
+  border-radius: 8px;
+  box-shadow: 0px 3px 15px 1px #00000033;
+}
+
+.seleccionar-archivos .execute {
+  position: absolute;
+  width: 380px;
+  font-size: 25px;
+  color: #ffffff;
+  height: 60px;
+  background-color: var(--variable-collection-boton);
+  border-radius: 8px;
+  box-shadow: 0px 3px 15px 1px #00000033;
+}
+
+.seleccionar-archivos .text-wrapper-7 {
+  position: absolute;
+  top: 17px;
+  left: 73px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #f7f7f7;
+  font-size: 22px;
+  letter-spacing: 1.32px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .header {
+  position: absolute;
+  width: 1089px;
+  height: 65px;
+  top: 35px;
+  left: 315px;
+  background-color: transparent;
+}
+
+.seleccionar-archivos .usuario {
+  position: absolute;
+  width: 191px;
+  height: 50px;
+  top: 2px;
+  left: 896px;
+}
+
+.seleccionar-archivos .foto-de-usuario {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -11px;
+  left: -15px;
+}
+
+.seleccionar-archivos .nombre-y-correo {
+  position: absolute;
+  width: 130px;
+  height: 37px;
+  top: 6px;
+  left: 65px;
+}
+
+.seleccionar-archivos .text-wrapper-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-inputs);
+  font-size: 18px;
+  letter-spacing: 1.08px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .text-wrapper-9 {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #656d77;
+  font-size: 14px;
+  letter-spacing: 0.84px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .linea-superior {
+  width: 1080px;
+  height: 1px;
+  top: 64px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.seleccionar-archivos .header-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-boton);
+  font-size: 45px;
+  letter-spacing: 2.7px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .barra-de-navegacin {
+  position: fixed;
+  width: 270px;
+  height: 1024px;
+  top: 0;
+  left: 0;
+  box-shadow: 6px 0px 10px #00000026;
+  background: linear-gradient(180deg, rgb(66, 76, 87) 0%, rgb(62, 71, 82) 100%);
+}
+
+.seleccionar-archivos .logo {
+  position: absolute;
+  width: 192px;
+  height: 51px;
+  top: 36px;
+  left: 30px;
+}
+
+.seleccionar-archivos .inicio-wrapper {
+  position: absolute;
+  width: 240px;
+  height: 60px;
+  top: 133px;
+  left: 15px;
+  background-color: var(--variable-collection-boton);
+  border-radius: 8px;
+}
+
+.seleccionar-archivos .inicio {
+  position: relative;
+  width: 95px;
+  height: 23px;
+  top: 19px;
+  left: 20px;
+}
+
+.seleccionar-archivos .vector-9 {
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: 1px;
+  left: -1px;
+}
+
+.seleccionar-archivos .text-wrapper-10 {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #f7f7f7;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .perfil {
+  position: absolute;
+  width: 94px;
+  height: 23px;
+  top: 218px;
+  left: 35px;
+}
+
+.seleccionar-archivos .vector-10 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: -1px;
+}
+
+.seleccionar-archivos .text-wrapper-11 {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #666e77;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seleccionar-archivos .cerrar-sesin {
+  position: absolute;
+  width: 177px;
+  height: 23px;
+  top: 958px;
+  left: 35px;
+}
+
+.seleccionar-archivos .text-wrapper-12 {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #656d77;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
