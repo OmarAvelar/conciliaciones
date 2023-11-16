@@ -8,7 +8,7 @@
 }
 
 body {
-	background: linear-gradient(90deg, #23232b, #14191f);		
+	background: linear-gradient(90deg, #39393b, rgb(37, 40, 45));		
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
 	position: relative;	
 	height: 600px;
 	width: 360px;	
-	box-shadow: 0px 0px 24px #f7f7f8;
+	box-shadow: 0px 0px 24px #36363c;
 }
 
 .screen__content {
@@ -103,7 +103,7 @@ body {
 
 .login__input {
 	border: none;
-	border-bottom: 2px solid #D1D1D4;
+	border-bottom: 2px solid #747480;
 	background: none;
 	padding: 10px;
 	padding-left: 24px;
@@ -116,23 +116,23 @@ body {
 .login__input:focus,
 .login__input:hover {
 	outline: none;
-	border-bottom-color: #6A679E;
+	border-bottom-color: #222227;
 }
 
 .login__submit {
-	background: #fff;
+	background: #979191;
 	font-size: 14px;
 	margin-top: 30px;
 	padding: 16px 20px;
 	border-radius: 26px;
-	border: 1px solid #D4D3E8;
+	border: 1px solid #333339;
 	text-transform: uppercase;
 	font-weight: 700;
 	display: flex;
 	align-items: center;
 	width: 100%;
-	color: #4C489D;
-	box-shadow: 0px 2px 2px #5C5696;
+	color: #d2d2dc;
+	box-shadow: 0px 2px 2px #73737a;
 	cursor: pointer;
 	transition: .2s;
 }
@@ -157,7 +157,7 @@ body {
 	text-align: center;
 	bottom: 0px;
 	right: 0px;
-	color: #fff;
+	color: #3b3636;
 }
 
 .social-icons {
@@ -168,7 +168,7 @@ body {
 
 .social-login__icon {
 	padding: 20px 10px;
-	color: #fff;
+	color: #726969;
 	text-decoration: none;	
 	text-shadow: 0px 0px 8px #7875B5;
 }

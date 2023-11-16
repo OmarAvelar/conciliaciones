@@ -5,7 +5,6 @@ import { Navigate } from "react-router-dom";
 import { AuthResponse, AuthResponseError } from "../types/types";
 import "../css/globals.css";
 import "../css/styleguide.css";
-import "../css/style.css";
 import "../css/styleLogin.css";
 
 export default function Login() {
@@ -51,7 +50,7 @@ export default function Login() {
     }
   }
   if (auth.isAuthenticated) {
-    return <Navigate to="/dashboard" />;
+    return <Navigate to="/me" />;
   }
   return (
     <DefaultLayout>

@@ -2,6 +2,8 @@ import csv from "./ndx.json";
 import React, { useEffect, useState } from "react";
 import crossfilter from "crossfilter2";
 import * as d3 from "d3";
+import "../css/style.css";
+import PortalLayout from "../layout/PortalLayout";
 import {
   BarChart,
   PieChart,
@@ -99,6 +101,8 @@ function App() {
   );
 
   return (
+    <PortalLayout>
+    <section style={{ backgroundColor: '#eee' }}>
     <div className="App">
       <h1>sdsds</h1>
       <ChartContext>
@@ -190,6 +194,8 @@ function App() {
         />
       </ChartContext>
     </div>
+    </section>
+    </PortalLayout>
   );
 }
 
